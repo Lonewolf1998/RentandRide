@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dell.rentandride.Registration">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:drawableLeft="@drawable/ic_action_uname"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/r_name"
+        android:layout_width="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/r_phone" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_action_phone"
+        android:ems="10"
+        android:hint="Phone"
+        android:id="@+id/r_phone"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/r_email"
+        android:layout_alignStart="@+id/r_email" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Email"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_action_email"
+        android:ems="10"
+        android:id="@+id/r_email"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/r_pass"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:ems="10"
+        android:id="@+id/r_pass"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/r_pass"
+        android:layout_alignStart="@+id/r_email" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:hint="Confirm Password"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/r_cpass"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/r_next"
+        android:layout_alignStart="@+id/r_pass" />
+
+    <Button
+        android:text="Next"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/r_next"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</LinearLayout>
