@@ -11,7 +11,8 @@ $count=mysqli_num_rows($a);
 	$f=mysqli_fetch_array($a,MYSQLI_ASSOC);
 	$user_id=$f["c_id"];
 	$user_name=$f["c_name"];
-	echo $user_id."/".$user_name;
+	$user_email=$f["c_email"];
+	echo $user_id."/".$user_name."/".$user_email;
 	
 }
 	
